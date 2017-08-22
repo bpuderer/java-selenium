@@ -11,3 +11,5 @@
 [chromedriver](https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver)
 
 [W3C WebDriver Spec](https://w3c.github.io/webdriver/webdriver-spec.html)
+
+[W3C XPath 1.0 Spec](https://www.w3.org/TR/xpath/)
