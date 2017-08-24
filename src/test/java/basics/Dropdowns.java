@@ -1,5 +1,7 @@
 package basics;
 
+import static org.junit.Assert.*;
+
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +20,7 @@ public class Dropdowns {
 		select.selectByValue("value3");
 		select.selectByIndex(1);
 		select.selectByVisibleText("Value 3");
-		Assert.assertEquals("Value 3", select.getFirstSelectedOption().getText());
+		assertEquals("Value 3", select.getFirstSelectedOption().getText());
 
 		driver.quit();
 	}

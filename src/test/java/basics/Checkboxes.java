@@ -1,5 +1,7 @@
 package basics;
 
+import static org.junit.Assert.*;
+
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,9 +17,9 @@ public class Checkboxes {
 		driver.get("https://login.salesforce.com/");
 
 		WebElement checkbox = driver.findElement(By.cssSelector("#rememberUn"));
-		Assert.assertEquals(false, checkbox.isSelected());
+		assertEquals(false, checkbox.isSelected());
 		checkbox.click();
-		Assert.assertEquals(true, checkbox.isSelected());
+		assertEquals(true, checkbox.isSelected());
 		
 		driver.quit();
 	}

@@ -1,5 +1,7 @@
 package basics;
 
+import static org.junit.Assert.*;
+
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,16 +10,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Locators {
 
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		System.out.println("BeforeClass");
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+		System.out.println("AfterClass");
+	}
+
 	@Before
-	public void setup() {
-		System.out.println("Before!");
+	public void setUp() throws Exception {
+		System.out.println("Before");
 	}
 
 	@After
-	public void tearDown() {
-		System.out.println("After!");
+	public void tearDown() throws Exception {
+		System.out.println("After");
 	}
-
+	
 	@Test
 	public void testLocators() {
 		WebDriver driver = new ChromeDriver();
@@ -38,7 +50,7 @@ public class Locators {
 		// driver.findElement(By.name("go")).click();
 
 		System.out.println(driver.getTitle());
-		Assert.assertEquals("John Cleese - Wikipedia", driver.getTitle());
+		assertEquals("John Cleese - Wikipedia", driver.getTitle());
 
 		driver.quit();
 	}
