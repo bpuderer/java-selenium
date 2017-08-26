@@ -42,7 +42,7 @@ public class Locators {
 		driver.findElement(By.id("searchButton")).click();
 
 		// driver.findElement(By.cssSelector("input[id='searchButton']")).click();
-		// driver.findElement(By.cssSelector(".searchButton")).click(); // class selector
+		// driver.findElement(By.cssSelector(".searchButton")).click(); // class selector. replace spaces with dots
 		// driver.findElement(By.cssSelector("#searchButton")).click(); // id selector
 
 		// driver.findElement(By.xpath("//*[@id='searchButton']")).click();

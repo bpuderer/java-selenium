@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import junit.framework.Assert;
+
 public class DisplayedEnabled {
 
 	@Test
@@ -35,6 +37,18 @@ public class DisplayedEnabled {
 		driver.findElement(By.cssSelector("#trip-type-round-trip")).click();
 		assertTrue(returnDate.isEnabled());
 		assertTrue(!returnDateLabel.getText().isEmpty());
+		
+		
+		driver.findElement(By.cssSelector("#air-pax-count-adults")).click();
+		for (int i=0; i < 3; i++) {
+			driver.findElement(By.cssSelector("#jb-number-selector-more")).click();
+			try {
+				Thread.sleep(50);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		assertEquals(4, Integer.parseInt(driver.findElement(By.cssSelector(".js-number-selector-value.number-selector--value")).getText()));
 		
 		driver.quit();
 	}
