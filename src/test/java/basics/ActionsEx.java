@@ -35,8 +35,9 @@ public class ActionsEx {
 		
 		Actions a = new Actions(driver);
 		// click in search field, hold Shift, enter "python", double click to select "python"
-		a.moveToElement(searchInput).click().keyDown(Keys.SHIFT).sendKeys("python").doubleClick().build().perform();
-		a.moveToElement(viewSource).contextClick().build().perform();
+		// perform() - A convenience method for performing the actions without calling build() first.
+		a.moveToElement(searchInput).click().keyDown(Keys.SHIFT).sendKeys("python").doubleClick().perform();
+		a.moveToElement(viewSource).contextClick().perform();
 	}
 	
 }
