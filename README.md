@@ -18,6 +18,12 @@
 
 [W3C XPath 1.0 Spec](https://www.w3.org/TR/xpath/)
 
+[TestNG](http://testng.org/doc/)
+
+[JUnit4](http://junit.org/junit4/)
+
+[JUnit5](http://junit.org/junit5/)
+
 Chrome: F12 or Tools > Developer Tools, Elements Panel, Ctrl+F
 
 Firefox: F12 or Tools > Web Developer > Toggle Tools, [Console](https://developer.mozilla.org/en-US/docs/Tools/Web_Console/Helpers)
