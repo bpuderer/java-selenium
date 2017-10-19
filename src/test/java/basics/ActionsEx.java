@@ -1,5 +1,6 @@
 package basics;
 
+import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -18,6 +19,12 @@ public class ActionsEx {
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+	}
+	
+	@After
+	public void cleanUp() throws Exception {
+		driver.manage().deleteAllCookies();
 	}
 	
 	@AfterClass
@@ -28,7 +35,6 @@ public class ActionsEx {
 	@Test
 	public void basicTest() {
 		driver.get("https://en.wikipedia.org/wiki/Main_Page");
-		driver.manage().window().maximize();
 		
 		WebElement viewSource = driver.findElement(By.linkText("View source"));
 		WebElement searchInput = driver.findElement(By.id("searchInput"));

@@ -23,7 +23,7 @@ public class Screenshot {
 		// by Sergii Pozharov
 		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(scrFile, new File("./screenshot.png"));
+			FileUtils.copyFile(scrFile, new File("screenshots/screenshot.png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
