@@ -33,3 +33,11 @@ Firefox: F12 or Tools > Web Developer > Toggle Tools, [Console](https://develope
 [Unifying Firebug & Firefox DevTools](https://blog.getfirebug.com/2016/06/07/unifying-firebug-firefox-devtools/)
 
 [Migration guide from Firebug to Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools/Migrating_from_Firebug)
+
+[Sauce Labs Se videos](https://www.youtube.com/user/saucelabs/search?query=selenium)
+
+[Official Selenium Blog](https://seleniumhq.wordpress.com/)
+
+[Elemental Selenium](http://www.elementalselenium.com/)
+
+[Dave Haeffner github](https://github.com/tourdedave)
