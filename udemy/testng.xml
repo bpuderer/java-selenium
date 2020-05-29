@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+
+<!--
+	<test name="UsingPackage">
+		<packages>
+			<package name="demos" />
+		</packages>
+	</test>
+-->
+
+<!-- 
+	<test name="UsingClasses">
+		<classes>
+			<class name="demos.TestngDemo" />
+		</classes>
+	</test>
+-->
+
+<!-- 
+	<test name="UsingClassMethods">
+		<classes>
+			<class name="demos.TestngDemo">
+				<methods>
+					<include name="testngTest1" />
+					<include name="testngTest3" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+-->
+
+	<test name="UsingGroups">
+		<parameter name="first-name" value="ben"/>
+		<groups>
+			<run>
+				<include name="priority1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="demos.TestngDemo" />
+		</classes>
+	</test>
+
+</suite>
