@@ -1,9 +1,9 @@
 package javascript;
 
-import base.BaseTests;
+import base.BaseTest;
 import org.testng.annotations.Test;
 
-public class JavaScriptTests extends BaseTests {
+public class JavaScriptTest extends BaseTest {
 
     @Test
     public void testScrollToTable() {

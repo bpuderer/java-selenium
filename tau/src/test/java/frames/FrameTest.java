@@ -1,11 +1,11 @@
 package frames;
 
-import base.BaseTests;
+import base.BaseTest;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class FrameTests extends BaseTests {
+public class FrameTest extends BaseTest {
 
     @Test
     public void testWysiwyg() {

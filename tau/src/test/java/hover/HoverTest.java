@@ -1,11 +1,11 @@
 package hover;
 
-import base.BaseTests;
+import base.BaseTest;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
-public class HoverTests extends BaseTests {
+public class HoverTest extends BaseTest {
 
     @Test
     public void testHoverUse1() {

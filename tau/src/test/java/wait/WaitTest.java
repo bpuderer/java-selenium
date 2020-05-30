@@ -1,11 +1,11 @@
 package wait;
 
-import base.BaseTests;
+import base.BaseTest;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class WaitTests extends BaseTests {
+public class WaitTest extends BaseTest {
 
     @Test
     public void testWaitUntilHidden() {

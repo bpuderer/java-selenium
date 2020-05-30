@@ -1,10 +1,10 @@
 package navigation;
 
-import base.BaseTests;
+import base.BaseTest;
 import org.testng.annotations.Test;
 
 
-public class NavigationTests extends BaseTests {
+public class NavigationTest extends BaseTest {
 
     @Test
     public void testNavigator() {

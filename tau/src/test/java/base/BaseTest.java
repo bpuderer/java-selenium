@@ -28,7 +28,14 @@ import java.util.concurrent.TimeUnit;
 // https://the-internet.herokuapp.com/
 // Chrome F12, ^F
 
-public class BaseTests {
+// https://maven.apache.org/surefire/maven-surefire-plugin/examples/single-test.html
+// mvn test
+// mvn -Dtest=FileUploadTest#testFileUpload test
+// mvn -Dtest=AlertTest test
+// https://maven.apache.org/surefire/maven-surefire-report-plugin/usage.html
+// mvn test surefire-report:report
+
+public class BaseTest {
 
     //private WebDriver driver;
     private EventFiringWebDriver driver;

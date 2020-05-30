@@ -1,11 +1,11 @@
 package alerts;
 
-import base.BaseTests;
+import base.BaseTest;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
-public class FileUploadTests extends BaseTests {
+public class FileUploadTest extends BaseTest {
 
     @Test
     public void testFileUpload() {

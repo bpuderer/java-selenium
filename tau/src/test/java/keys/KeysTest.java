@@ -1,12 +1,12 @@
 package keys;
 
-import base.BaseTests;
+import base.BaseTest;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class KeysTests extends BaseTests {
+public class KeysTest extends BaseTest {
 
     @Test
     public void testBackspace() {

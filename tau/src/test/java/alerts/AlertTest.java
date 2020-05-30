@@ -1,10 +1,10 @@
 package alerts;
 
-import base.BaseTests;
+import base.BaseTest;
 import org.testng.annotations.Test;
 import static org.testng.Assert.*;
 
-public class AlertTests extends BaseTests {
+public class AlertTest extends BaseTest {
 
     @Test
     public void testAcceptAlert() {
