@@ -28,3 +28,7 @@ target
 *.png
 logs
 test-output
+
+# IntelliJ
+.idea
+*.iml
