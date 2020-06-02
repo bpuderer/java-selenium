@@ -33,7 +33,7 @@ import java.util.concurrent.TimeUnit;
 // mvn -Dtest=FileUploadTest#testFileUpload test
 // mvn -Dtest=AlertTest test
 // https://maven.apache.org/surefire/maven-surefire-report-plugin/usage.html
-// mvn test surefire-report:report
+// mvn clean test surefire-report:report
 
 public class BaseTest {
 
@@ -77,22 +77,23 @@ public class BaseTest {
 
     @AfterMethod
     public void recordFailure(ITestResult result) {
-
         if (ITestResult.FAILURE == result.getStatus()) {
-
-            var camera = (TakesScreenshot) driver;
-            File screenshot = camera.getScreenshotAs(OutputType.FILE);
-
-            String timestamp = new SimpleDateFormat("yyyy-MM-dd'T'HHmmss.SSS").format(new Date());
-            String filename = "resources/screenshots/" + result.getName() + timestamp + ".png";
-            try {
-                Files.move(screenshot.toPath(), new File(filename).toPath());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            takeScreenshot(result.getName());
         }
     }
-    // TODO: add takeScreenshot() method which can be called from test and use method name in filename
+
+    public void takeScreenshot(String testName) {
+        var camera = (TakesScreenshot) driver;
+        File screenshot = camera.getScreenshotAs(OutputType.FILE);
+
+        String timestamp = new SimpleDateFormat("yyyy-MM-dd'T'HHmmss.SSS").format(new Date());
+        String filename = "resources/screenshots/" + testName + timestamp + ".png";
+        try {
+            Files.move(screenshot.toPath(), new File(filename).toPath());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     private ChromeOptions getChromeOptions() {
         ChromeOptions options = new ChromeOptions();
