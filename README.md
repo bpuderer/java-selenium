@@ -12,7 +12,7 @@
 
 [geckodriver](https://github.com/mozilla/geckodriver)
 
-[chromedriver](https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver)
+[chromedriver](https://sites.google.com/chromium.org/driver/)
 
 [W3C WebDriver Spec](https://w3c.github.io/webdriver/webdriver-spec.html)
 
