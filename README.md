@@ -1,42 +1,36 @@
-# java-selenium
+# useful links
 
-[Selenium Java API](https://seleniumhq.github.io/selenium/docs/api/java/)
+[Selenium Java API Docs](https://www.selenium.dev/selenium/docs/api/java/)
 
-[SeleniumHQ](http://www.seleniumhq.org/)
+[chromedriver](https://chromedriver.chromium.org/)
 
-[SeleniumHQ Page Object Design Pattern](http://docs.seleniumhq.org/docs/06_test_design_considerations.jsp#page-object-design-pattern)
+[MDN Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 
-[SeleniumHQ Page Objects](https://github.com/SeleniumHQ/selenium/wiki/PageObjects)
+[MDN Window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
+
+[Selenium](https://www.selenium.dev/)
+
+[Selenium Page Object Models](https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/)
 
 [SeleniumHQ Selenium github](https://github.com/SeleniumHQ/selenium)
 
 [geckodriver](https://github.com/mozilla/geckodriver)
 
-[chromedriver](https://sites.google.com/chromium.org/driver/)
-
-[W3C WebDriver Spec](https://w3c.github.io/webdriver/webdriver-spec.html)
+[W3C WebDriver Spec](https://www.w3.org/TR/webdriver/)
 
 [W3C XPath 1.0 Spec](https://www.w3.org/TR/xpath/)
 
-[TestNG](http://testng.org/doc/)
+[TestNG](https://testng.org/)
 
-[JUnit4](http://junit.org/junit4/)
+[JUnit4](https://junit.org/junit4/)
 
-[JUnit5](http://junit.org/junit5/)
+[JUnit5](https://junit.org/junit5/)
 
 Chrome: F12 or Tools > Developer Tools, Elements Panel, Ctrl+F
 
-Firefox: F12 or Tools > Web Developer > Toggle Tools, [Console](https://developer.mozilla.org/en-US/docs/Tools/Web_Console/Helpers)
+Firefox: F12 or Tools > Web Developer > Toggle Tools, [Web Console Helpers](https://firefox-source-docs.mozilla.org/devtools-user/web_console/helpers/index.html)
 
-[Firebug](https://getfirebug.com/) no longer developed/maintained.
-
-[Unifying Firebug & Firefox DevTools](https://blog.getfirebug.com/2016/06/07/unifying-firebug-firefox-devtools/)
-
-[Migration guide from Firebug to Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools/Migrating_from_Firebug)
-
-[Sauce Labs Se videos](https://www.youtube.com/user/saucelabs/search?query=selenium)
-
-[Official Selenium Blog](https://seleniumhq.wordpress.com/)
+[Official Selenium Blog](https://www.selenium.dev/blog/)
 
 [Elemental Selenium](http://www.elementalselenium.com/)
 
