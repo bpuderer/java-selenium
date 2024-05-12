@@ -86,6 +86,11 @@ public class HomePage {
         return new MultipleWindowsPage(driver);
     }
 
+    public DragAndDropPage clickDragAndDrop() {
+        clickLink("Drag and Drop");
+        return new DragAndDropPage(driver);
+    }
+
     private void clickLink(String linkText) {
         driver.findElement(By.linkText(linkText)).click();
     }
